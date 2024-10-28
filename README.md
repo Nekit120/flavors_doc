@@ -95,7 +95,7 @@ Flavors (флейворы) — это возможность создания р
 BASE_URL=https://stage.api-dss.prox2.dex-it.ru
 API_KEY=your_prod_api_key
 APP_NAME=DSS Workspace
-
+```
 ## 2. Настройка конфигураций в launch.json
 
 Теперь, когда у вас есть файлы с переменными окружения, вы можете настроить `launch.json`, чтобы передавать их в приложение при запуске. Пример конфигурации для флейвора `prod`:
@@ -111,4 +111,4 @@ APP_NAME=DSS Workspace
         "--dart-define-from-file=.env/prod.env"
     ]
 }
-
+```
