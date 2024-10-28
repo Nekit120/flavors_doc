@@ -112,3 +112,13 @@ APP_NAME=DSS Workspace
     ]
 }
 ```
+Таким образом, при запуске конфигурации **Flutter: Prod** будут загружены переменные из файла `prod.env`.
+
+## 3. Использование переменных в коде
+
+После того как вы настроили и запустили приложение с помощью переменных окружения, вы можете получить доступ к этим переменным в вашем коде с помощью `const String.fromEnvironment`:
+
+```dart
+const String apiUrl = String.fromEnvironment('API_URL', defaultValue: 'https://api.default');
+const String apiKey = String.fromEnvironment('API_KEY', defaultValue: 'default_key');
+```
